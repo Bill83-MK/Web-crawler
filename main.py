@@ -8,6 +8,8 @@ def site_crawling(query):
     # Search for the sites
     page.click("input[names=q]")
     page.keyboard.type(query, delay=100)
+    time.sleep(2.122)
+    
     page.keyboard.press('Enter')  
     browser.close()
     p.stop()
